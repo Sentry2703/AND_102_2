@@ -7,13 +7,12 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/itemsRv"
-    android:layout_width="match_parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:layout_height="0dp"
-    tools:listitem="@layout/list_item"
-    app:layout_constraintBottom_toTopOf="@id/EnterName"
-        />
+        android:id="@+id/itemsRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/EnterName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_item" />
 
     <Button
         android:id="@+id/moreButton"
@@ -25,15 +24,14 @@
 
     <EditText
         android:id="@+id/EnterName"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:ems="10"
-        android:hint = "@string/item_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemsRv"
-        app:layout_constraintBottom_toTopOf="@id/EnterURL"
+        android:hint="@string/item_name"
         android:importantForAutofill="no"
-        android:inputType = "text" />
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/EnterURL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemsRv" />
 
     <EditText
         android:id="@+id/EnterNumber"
@@ -50,14 +48,14 @@
 
     <EditText
         android:id="@+id/EnterURL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:ems="10"
-        android:hint = "@string/link_to_the_item"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/link_to_the_item"
         android:importantForAutofill="no"
-        android:inputType = "textUri"/>
+        android:inputType="textUri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

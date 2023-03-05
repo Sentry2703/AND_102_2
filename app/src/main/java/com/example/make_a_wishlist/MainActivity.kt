@@ -31,12 +31,16 @@ class MainActivity : AppCompatActivity() {
 
         submitButton.setOnClickListener {
             itemName = nameTag.text.toString()
-            price = priceTag.text.toString()
+            price = "$ " + priceTag.text.toString()
             url = urlTag.text.toString()
             val wish = Wish(itemName, price, url)
             (items as MutableList<Wish>).add(wish)
 
             adapter.notifyDataSetChanged()
+
+            nameTag.text.clear()
+            priceTag.text.clear()
+            urlTag.text.clear()
         }
 
 

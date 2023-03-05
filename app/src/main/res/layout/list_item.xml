@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/price"
         android:layout_width="100dp"
-        android:layout_height="20dp"
+        android:layout_height="40dp"
         android:textSize="15sp"
         android:text="@string/price_holder"
         android:gravity="end|center_vertical"
@@ -27,11 +27,12 @@
 
     <TextView
         android:id="@+id/url"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
         android:text="@string/url_link"
         android:gravity="end|center_vertical"
         android:layout_marginTop="10dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/price" />
 
