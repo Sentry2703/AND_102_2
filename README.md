@@ -31,6 +31,8 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with Recordit
 
+Gif link: http://g.recordit.co/zlBhdRxcFI.gif 
+
 ## Notes
 
 Had a few issues, converting from loading data into the list, into using dynamic input
